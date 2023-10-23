@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.flex-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.flex-section img {
+    width: 100%; 
+    height: auto; 
+}
+
+.flex-section h3 {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #8e6a6a;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.sign-up {
+    background-color: #333;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.best-sellers,
+.sales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.best-sellers img,
+.sales img {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
+/*produkside*/
+
+.shoe-sizes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 50px; 
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+.shoe-sizes button {
+    background-color: #676060;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.shoe-sizes button:hover {
+    background-color: #6b4444;
+}
+.produkt-boks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.legg-til-handlekurv {
+    background-color: #000000;
+    color: white;
+    padding: 10px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.legg-til-handlekurv:hover {
+    background-color: #6b4444;
+}
+
+
+.other-products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.other-products img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px; 
+}
+
+/*returside*/
+.return-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.return-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.return-text {
+    text-align: center;
+    margin: 20px;
+    padding: 50px;
+    
+}
+
+p {
+    background-color: #8e8888;
+    border: 1px solid #867979;
+    padding: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /
+}
+
+@media screen and (min-width: 600px) {
+   
+    .flex-section {
+        flex-direction: row; 
+    }
+
+    .best-sellers,
+    .sales {
+        justify-content: space-between; 
+    }
+
+    .shoe-sizes {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
